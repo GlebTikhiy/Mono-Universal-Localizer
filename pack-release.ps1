@@ -10,7 +10,6 @@ $project = Join-Path $root "BurglinGnomesRuAutoTranslate.csproj"
 $outDir = Join-Path $root "bin\$Configuration\$Framework"
 $distDir = Join-Path $root "dist"
 
-# Make dotnet CLI deterministic in restricted environments.
 $env:DOTNET_SKIP_FIRST_TIME_EXPERIENCE = "1"
 $env:DOTNET_CLI_TELEMETRY_OPTOUT = "1"
 $env:DOTNET_CLI_HOME = Join-Path $root ".dotnet"
@@ -55,17 +54,16 @@ Copy-Item $readmePath (Join-Path $staging "README.md") -Force
 $install = @"
 Install:
 1. Copy BurglinGnomesRuAutoTranslate.dll to:
-   <GAME>\\BepInEx\\plugins\\BurglinGnomesRuAutoTranslate\\
+   <GAME>\\BepInEx\\plugins\\MonoUniversalLocalizer\\
 2. Copy MonoUniversal.dictionary.txt to:
    <GAME>\\BepInEx\\config\\
 3. Start the game.
 "@
 $install | Set-Content -Encoding UTF8 (Join-Path $staging "INSTALL.txt")
 
-$zipPath = Join-Path $distDir ("BurglinGnomesRuAutoTranslate-{0}.zip" -f $version)
-if (Test-Path $zipPath) { Remove-Item -Force $zipPath }
+Get-ChildItem $distDir -Filter "*.zip" -ErrorAction SilentlyContinue | Remove-Item -Force
+$zipPath = Join-Path $distDir ("Mono-Universal-Localizer-{0}.zip" -f $version)
 
 Compress-Archive -Path (Join-Path $staging "*") -DestinationPath $zipPath -Force
 
 Write-Host "Release package ready: $zipPath"
-

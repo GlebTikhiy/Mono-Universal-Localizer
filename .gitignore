@@ -1,0 +1,20 @@
+# Build artifacts
+bin/
+obj/
+dist/
+
+# Game-specific reference libraries (do not publish)
+lib/
+
+# IDE / OS
+.vs/
+*.user
+*.suo
+*.cache
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+
+.dotnet/

@@ -1,0 +1,9 @@
+# Формат: source|target
+Play|Играть
+Options|Настройки
+Quit|Выход
+Nickname|Ник
+Host|Хост
+Client|Клиент
+Ready|Готов
+Start|Старт

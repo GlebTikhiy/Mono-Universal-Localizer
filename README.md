@@ -7,7 +7,7 @@
 - работа через BepInEx 5.x.
 
 ## Что важно
-- Мод теперь **универсальный** (не только для Burglin' Gnomes).
+- Мод универсальный (не только для Burglin' Gnomes).
 - Название плагина в логе: `Mono Universal Localizer`.
 - GUID: `com.glebtikhiy.monouniversallocalizer`.
 
@@ -16,7 +16,7 @@
 2. Скачай ZIP из GitHub Releases.
 3. Скопируй `BurglinGnomesRuAutoTranslate.dll` в:
    - `<GAME>\BepInEx\plugins\MonoUniversalLocalizer\`
-4. Скопируй `MonoUniversal.dictionary.txt` в:
+4. (Опционально) Скопируй `MonoUniversal.dictionary.txt` в:
    - `<GAME>\BepInEx\config\`
 5. Запусти игру.
 
@@ -25,10 +25,22 @@
 - файл: `<GAME>\BepInEx\config\MonoUniversal.translation.cache.txt`
 - при следующем запуске переводы берутся из файла, а не заново из интернета.
 
-## Ограничение на веб-переводы
-Есть лимит запросов за 1 запуск (чтобы не упираться в rate limit API):
-- `MaxWebRequestsPerSession = 0`
-- параметр в конфиге можно увеличить/уменьшить.
+## Лимит веб-переводов
+Параметр:
+- `MaxWebRequestsPerSession = 0` (по умолчанию без ограничений)
+- если нужно ограничение, поставь число `> 0`.
+
+## Словарь (опционально)
+`MonoUniversal.dictionary.txt` не обязателен, но полезен:
+- даёт мгновенный перевод частых строк,
+- повышает стабильность формулировок,
+- уменьшает количество API-запросов.
+
+Формат строк:
+- `Original|Перевод`
+
+Пример:
+- `New Game|Новая игра`
 
 ## Главные настройки
 Файл конфига:
@@ -44,13 +56,6 @@
 - `MaxWebRequestsPerSession = 0`
 - `DictionaryPath = MonoUniversal.dictionary.txt`
 - `TmpFontFilePath = C:\Windows\Fonts\arial.ttf;C:\Windows\Fonts\tahoma.ttf;C:\Windows\Fonts\segoeui.ttf`
-
-## Словарь
-Формат строк:
-- `Original|Перевод`
-
-Пример:
-- `New Game|Новая игра`
 
 ## Сборка (для разработчиков)
 1. Подтянуть DLL игры:
@@ -70,4 +75,3 @@ powershell -ExecutionPolicy Bypass -File .\pack-release.ps1
 
 ## Лицензия
 MIT
-

@@ -1,9 +1,117 @@
-# Формат: source|target
+# Optional dictionary for quick/stable translations.
+# Format: source|target
 Play|Играть
+Continue|Продолжить
+New Game|Новая игра
+Load Game|Загрузить игру
+Save Game|Сохранить игру
 Options|Настройки
+Settings|Настройки
+Controls|Управление
+Graphics|Графика
+Audio|Звук
+Language|Язык
+Gameplay|Геймплей
+Interface|Интерфейс
+Video|Видео
+Display|Экран
+Resolution|Разрешение
+Fullscreen|Полный экран
+Windowed|Оконный режим
+VSync|Вертикальная синхронизация
+Quality|Качество
+Brightness|Яркость
+Contrast|Контраст
+Gamma|Гамма
+Master Volume|Общая громкость
+Music Volume|Громкость музыки
+SFX Volume|Громкость эффектов
+Voice Volume|Громкость голоса
+Apply|Применить
+Cancel|Отмена
+Back|Назад
+Close|Закрыть
+Confirm|Подтвердить
+Accept|Принять
+Decline|Отклонить
+Yes|Да
+No|Нет
+On|Вкл
+Off|Выкл
+Enabled|Включено
+Disabled|Выключено
+Pause|Пауза
+Resume|Продолжить
+Restart|Перезапуск
+Retry|Повторить
 Quit|Выход
-Nickname|Ник
-Host|Хост
+Exit|Выход
+Main Menu|Главное меню
+Loading|Загрузка
+Saving|Сохранение
+Connecting|Подключение
+Disconnected|Отключено
+Connection Lost|Соединение потеряно
+Reconnecting|Переподключение
+Server|Сервер
 Client|Клиент
-Ready|Готов
+Host|Хост
+Lobby|Лобби
+Room|Комната
+Create Room|Создать комнату
+Join Room|Присоединиться
 Start|Старт
+Ready|Готов
+Not Ready|Не готов
+Invite|Пригласить
+Player|Игрок
+Players|Игроки
+Nickname|Ник
+Name|Имя
+Level|Уровень
+Score|Счет
+Time|Время
+Round|Раунд
+Wave|Волна
+Health|Здоровье
+Stamina|Выносливость
+Mana|Мана
+Energy|Энергия
+Damage|Урон
+Defense|Защита
+Speed|Скорость
+Inventory|Инвентарь
+Equipment|Снаряжение
+Item|Предмет
+Items|Предметы
+Use|Использовать
+Drop|Выбросить
+Take|Взять
+Craft|Создать
+Map|Карта
+Quest|Задание
+Quests|Задания
+Mission|Миссия
+Objective|Цель
+Completed|Выполнено
+Failed|Провалено
+Success|Успех
+Warning|Предупреждение
+Error|Ошибка
+Information|Информация
+Online|В сети
+Offline|Не в сети
+Search|Поиск
+Filter|Фильтр
+Sort|Сортировка
+Default|По умолчанию
+Reset|Сброс
+Credits|Титры
+Version|Версия
+Help|Помощь
+Tutorial|Обучение
+Difficulty|Сложность
+Easy|Легко
+Normal|Нормально
+Hard|Сложно
+Very Hard|Очень сложно

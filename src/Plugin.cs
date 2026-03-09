@@ -16,7 +16,7 @@ namespace BurglinGnomesRuAutoTranslate
     {
         public const string PluginGuid = "com.glebtikhiy.monouniversallocalizer";
         public const string PluginName = "Mono Universal Localizer";
-        public const string PluginVersion = "2.1.0";
+        public const string PluginVersion = "2.1.1";
 
         private const string CyrillicProbe = "АБВГДЕЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеежзийклмнопрстуфхцчшщъыьэюя";
 
@@ -657,6 +657,7 @@ namespace BurglinGnomesRuAutoTranslate
         }
     }
 }
+
 
 
 
